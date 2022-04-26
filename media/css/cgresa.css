@@ -1,0 +1,58 @@
+/**
+ * @package CG Resa Module
+ * @version 2.0.1
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ * @copyright (c) 2021 ConseilGouz. All Rights Reserved.
+ * @author ConseilGouz 
+ */
+.closed {
+    background-color: red;
+    pointer-events: auto  !important;
+}
+.events {
+    background-color: green;
+    pointer-events: auto;
+}
+.ui-datepicker-calendar .ui-state-highlight {background: #fffa90 !important;}
+#cg_resa_privacy {
+	
+}
+#cg_resa_privacy_text{
+	display:block;
+	opacity: 0;
+	position: absolute; 
+	font-size:90%;
+	left:2vh;
+	top:0vh; 
+	border:1px solid black;
+	background-color:lightgrey;
+	z-index:99999;
+	padding:1vh;
+   transform: rotateX(90deg);
+   -moz-transform: rotateX(90deg);
+   -webkit-transform: rotateX(90deg);
+}
+#cg_resa_privacy_text.cg_show {
+	position: absolute;
+	opacity: 1;
+   transition: all 1s linear,transform 1s;
+   -moz-transition: all 1s linear, -moz-transform 1s;
+   -webkit-transition: all 1s linear, -webkit-transform 1s;
+   transform: rotateX(0deg);
+   -moz-transform: rotateX(0deg);
+   -webkit-transform: rotateX(0deg);
+}
+#cg_resa_privacy {
+	float:right; 
+	font-size:75%;
+	margin-bottom:1em
+}
+.cgresaform textarea, .field-calendar, .input-group {
+    width: 100% !important;
+}
+.cgresaform input, .cgresaform textarea {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+

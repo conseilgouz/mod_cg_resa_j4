@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.8" client="site" method="upgrade">
+	<name>mod_cg_resa</name>
+	<author>ConseilGouz</author>
+	<creationDate>November 2021</creationDate>
+	<copyright>Copyright (C) 2021 ConseilGouz. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
+	<authorUrl>www.conseilgouz.com</authorUrl>
+	<version>2.0.1</version>
+	<description>MOD_CG_RESA_XML_DESCRIPTION</description>
+	<namespace path="src">ConseilGouz\Module\CGResa</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename module="mod_cg_resa">mod_cg_resa.php</filename>
+		<filename>index.html</filename>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<media destination="mod_cg_resa" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<filename>index.html</filename>
+	</media>
+	<languages>
+		<language tag="fr-FR">language/fr-FR/mod_cg_resa.ini</language>
+		<language tag="fr-FR">language/fr-FR/mod_cg_resa.sys.ini</language>
+		<language tag="en-GB">language/en-GB/mod_cg_resa.ini</language>
+		<language tag="en-GB">language/en-GB/mod_cg_resa.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="css" type="textarea" label="MOD_CG_RESA_CSS" description="MOD_CG_RESA_CSS_DESC" cols="400" rows="4" filter="raw" 
+					default=""
+					/>	
+				<field name="hidelegend" type="radio" label="MOD_CG_RESA_HIDE_LEGEND" description="MOD_CG_RESA_HIDE_LEGEND_DESC" 
+				class="btn-group btn-group-yesno" default="false"> 
+				<option value="true">JYES</option>
+				<option value="false">JNO</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="0"
+					>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<changelogurl>https://www.conseilgouz.com/updates/mod_cg_resa_changelog.xml</changelogurl>
+	<updateservers>
+	<server type="extension" name="Module CG Resa" priority="1">https://www.conseilgouz.com/updates/mod_cg_resa_update.xml</server>
+	</updateservers>
+	
+</extension>
