@@ -13,6 +13,7 @@ use Joomla\CMS\Plugin\PluginHelper;
 use Joomla\CMS\Form\Form;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Router\Route;
 
 HTMLHelper::_('behavior.formvalidator');
 $resaForm = new Form('ResaForm');
@@ -25,7 +26,7 @@ Factory::getApplication()->triggerEvent('onResaFormPrepare', array('mod_cg_resa_
 ?>
 <p id="cg_resa_messages">
 </p>
-<form action="<?php echo JRoute::_('index.php', true); ?>" method="post" id="resa-form" class="form-validate">
+<form action="<?php echo Route::_('index.php', true); ?>" method="post" id="resa-form" class="form-validate">
 	<div class="form-horizontal">
 		<fieldset class="cgresaform">
 			<?php if ($params->get('hidelegend','false') == 'false') { ?>

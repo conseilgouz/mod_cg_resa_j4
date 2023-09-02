@@ -12,6 +12,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Helper\ModuleHelper;
 use Joomla\CMS\Uri\Uri;
+use Joomla\CMS\HTML\HTMLHelper;
 use ConseilGouz\Module\CGResa\Site\Helper\CGResaHelper;
 use ConseilGouz\Component\CGResa\Site\Controller\ResaController;
 
@@ -19,7 +20,7 @@ $language = Factory::getLanguage();
 $language->load($module->module);
 
 $document = Factory::getDocument();
-JHtml::_('behavior.keepalive');
+HTMLHelper::_('behavior.keepalive');
 
 $compath = ''.URI::base(true).'/media/com_cgresa';
 
