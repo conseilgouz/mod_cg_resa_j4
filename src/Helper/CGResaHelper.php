@@ -1,11 +1,10 @@
 <?php
 /**
  * @module     CG Résa
- * Version			: 2.0.1
+ * Version			: 2.1.0
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
- * @copyright (c) 2021 ConseilGouz. All Rights Reserved.
+ * @copyright (c) 2023 ConseilGouz. All Rights Reserved.
  * @author ConseilGouz 
- * Updated on       : September, 2021
 **/
 namespace ConseilGouz\Module\CGResa\Site\Helper;
 
@@ -37,11 +36,7 @@ class CGResaHelper
         if (!$form->validate($data)) {
             $errors = $form->getErrors();
             for ($i = 0, $n = count($errors); $i < $n && $i < 3; $i++) {
-                if ($errors[$i] instanceof Exception) {
-			        $app->enqueueMessage($errors[$i]->getMessage(), 'notice');
-				} else {
-			        $app->enqueueMessage($errors[$i], 'notice');
-				}
+		        $app->enqueueMessage($errors[$i]->getMessage(), 'notice');
             }
             return false;
         }

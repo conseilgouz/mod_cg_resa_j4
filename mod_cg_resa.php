@@ -11,6 +11,7 @@
 defined('_JEXEC') or die;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Helper\ModuleHelper;
+use Joomla\CMS\Uri\Uri;
 use ConseilGouz\Module\CGResa\Site\Helper\CGResaHelper;
 use ConseilGouz\Component\CGResa\Site\Controller\ResaController;
 
@@ -20,14 +21,14 @@ $language->load($module->module);
 $document = Factory::getDocument();
 JHtml::_('behavior.keepalive');
 
-$compath = ''.JURI::base(true).'/media/com_cgresa';
+$compath = ''.URI::base(true).'/media/com_cgresa';
 
 $comparams = ResaController::getParams(); 
 
 $document->addScript($compath."/js/errormessages.js");
 $document->addScript($compath."/js/cgresa.js"); // validation 
 
-$modulefield	= ''.JURI::base(true).'/media/'.$module->module;
+$modulefield	= ''.URI::base(true).'/media/'.$module->module;
 $document->addStyleSheet($modulefield.'/css/cgresa.css'); 
 $document->addStyleSheet($modulefield.'/css/up.css'); 
 $document->addStyleDeclaration($params->get('css','')); 
