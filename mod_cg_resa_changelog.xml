@@ -2,6 +2,20 @@
 	<changelog>
 		<element>mod_cg_resa</element>
 		<type>module</type>
+		<version>2.1.1</version>
+        <note>
+            <item>Update : 03/09/2023</item>
+        </note>
+        <fix>
+            <item>Fix language files</item>
+        </fix>
+		<addition>
+            <item>Dynamic version number display (from xml)</item>
+		</addition>
+	</changelog>
+	<changelog>
+		<element>mod_cg_resa</element>
+		<type>module</type>
 		<version>2.1.0</version>
         <note>
             <item>Update : 02/09/2023</item>

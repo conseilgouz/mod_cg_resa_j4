@@ -2,12 +2,12 @@
 <extension type="module" version="3.8" client="site" method="upgrade">
 	<name>mod_cg_resa</name>
 	<author>ConseilGouz</author>
-	<creationDate>2023-09-02</creationDate>
+	<creationDate>2023-09-03</creationDate>
 	<copyright>Copyright (C) 2023 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>2.1.0</version>
+	<version>2.1.1</version>
 	<description>MOD_CG_RESA_XML_DESCRIPTION</description>
 	<namespace path="src">ConseilGouz\Module\CGResa</namespace>
 	<scriptfile>script.php</scriptfile>
@@ -31,7 +31,8 @@
 	
 	<config>
 		<fields name="params">
-			<fieldset name="basic">
+			<fieldset name="basic" addfieldprefix="ConseilGouz\Module\CGResa\Site\Field">
+				<field name="version" type="version"  margintop="-3em" extension="mod_cg_resa"/>
 				<field name="css" type="textarea" label="MOD_CG_RESA_CSS" description="MOD_CG_RESA_CSS_DESC" cols="400" rows="4" filter="raw" 
 					default=""
 					/>	
