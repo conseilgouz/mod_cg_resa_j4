@@ -1,7 +1,7 @@
 <?php
 /**
 * CG Resa Module  - Joomla 4.x/5x Module 
-* Version			: 2.1.2
+* Version			: 2.1.3
 * Package			: CG Resa
 * copyright 		: Copyright (C) 2023 ConseilGouz. All rights reserved.
 * license    		: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
@@ -115,7 +115,7 @@ class mod_cg_resaInstallerScript
 		// Simple Isotope is now on Github
 		$query = $db->getQuery(true)
 			->delete('#__update_sites')
-			->where($db->quoteName('location') . ' like "%conseilgouz.com/updates/mod_cg_resa%"');
+			->where($db->quoteName('location') . ' like "%conseilgouz.com/updates/mod_cg_resa_update%"');
 		$db->setQuery($query);
 		$db->execute();
 		

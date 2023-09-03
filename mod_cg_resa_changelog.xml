@@ -2,6 +2,17 @@
 	<changelog>
 		<element>mod_cg_resa</element>
 		<type>module</type>
+		<version>2.1.3</version>
+        <note>
+            <item>Update : 03/09/2023</item>
+        </note>
+        <fix>
+            <item>Remove obsolete update link, only mod_cg_resa link</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>mod_cg_resa</element>
+		<type>module</type>
 		<version>2.1.2</version>
         <note>
             <item>Update : 03/09/2023</item>
