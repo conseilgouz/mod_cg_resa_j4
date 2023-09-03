@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>2.1.1</version>
+	<version>2.1.2</version>
 	<description>MOD_CG_RESA_XML_DESCRIPTION</description>
 	<namespace path="src">ConseilGouz\Module\CGResa</namespace>
 	<scriptfile>script.php</scriptfile>
