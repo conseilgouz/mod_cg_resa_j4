@@ -1,7 +1,7 @@
 <?php
 /**
 * CG Resa Module  - Joomla 4.x/5x Module 
-* Version			: 2.1.3
+* Version			: 2.1.4
 * Package			: CG Resa
 * copyright 		: Copyright (C) 2023 ConseilGouz. All rights reserved.
 * license    		: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
